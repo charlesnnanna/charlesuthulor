@@ -33,7 +33,7 @@ html.no-js(lang="zxx")
       .container.main-menu
         .row.align-items-center.justify-content-between.d-flex
           #logo
-            a(href="index.html")
+            a(href="/")
               img(src="img/logo.png" alt="" title="")
           nav#nav-menu-container
             ul.nav-menu
@@ -43,82 +43,115 @@ html.no-js(lang="zxx")
                 a(href="/about") About
               li
                 a(href="/portfolio") Portfolio
-              
+               
+                 
+          // #nav-menu-container
     // #header
     // start banner Area
-    section.banner-area
+    section.about-banner
       .container
-        .row.fullscreen.align-items-center.justify-content-between
-          .col-lg-6.col-md-6.banner-left
-            h6 Hi, This is me
-            h1 Charles Uthulor
-            p
-              | You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.
-            a.primary-btn.text-uppercase(href="#") discover now
-          .col-lg-6.col-md-6.banner-right.d-flex.align-self-end
-            img.img-fluid(style="margin-top: 120px;" src="img/hero-img.jpg" alt="")
+        .row.d-flex.align-items-center.justify-content-center
+          .about-content.col-lg-12
+            h1.text-white
+              | About Charles
+            p.text-white.link-nav
+              a(href="/") Home 
+              span.lnr.lnr-arrow-right
+              a(href="/about")  About Charles
     // End banner Area
     // Start home-about Area
-    section.home-about-area.pt-120(style="margin-top: 100px;")
+    section.home-about-area.section-gap
       .container
         .row.align-items-center.justify-content-between
           .col-lg-6.col-md-6.home-about-left
-            img.img-fluid(src="img/about-img.jpg" alt="")
+            img.img-fluid(src="img/about-img.png" alt="")
           .col-lg-5.col-md-6.home-about-right
-            h6 About Me
+            h6 About Charles
             h1.text-uppercase Personal Details
             p
               | Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             a.primary-btn.text-uppercase(href="#") View Full Details
+          .col-lg-12.pt-60
+            p
+              | It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned. The history of video game is as interesting as a fairy tale.
+            p
+              | The quality of today’s video game was not at all there when video game first conceptualized and played ever. During the formulative years, video games were created by using various interactive electronic devices with various display formats. The first ever video game was designed in 1947 by Thomas T. Goldsmith Jr.
+            h4.pt-30 Tools Expertness
+        .row.skillbar-wraps
+          .col-lg-6.skill-left
+            .single-skill
+              p
+                | After Effects 85%
+              .skill(data-width="85")
+            .single-skill
+              p
+                | Photoshop 90%
+              .skill(data-width="90")
+            .single-skill
+              p
+                | Illustrator 70%
+              .skill(data-width="70")
+          .col-lg-6.skill-right
+            .single-skill
+              p
+                | Sublime 95%
+              .skill(data-width="95")
+            .single-skill
+              p
+                | Sketch 85%
+              .skill(data-width="85")
     // End home-about Area
-    // Start services Area
-    section.services-area.section-gap
-      .container
-        .row.d-flex.justify-content-center
-          .menu-content.col-lg-7
-            .title.text-center
-              h1.mb-10 My Offered Services
-              p
-                | At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.
-        .row
-          .col-lg-4.col-md-6
-            .single-services
-              span.lnr.lnr-laptop-phone
-              a(href="#")
-                h4 Front-end Web Development
-              p
-                | “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
-          .col-lg-4.col-md-6
-            .single-services
-              span.lnr.lnr-cloud
-              a(href="#")
-                h4 Server-side Web Development
-              p
-                | If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
-          .col-lg-4.col-md-6
-            .single-services
-              span.lnr.lnr-laptop
-              a(href="#")
-                h4 FullStack Web Developement
-              p
-                | Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
-          .col-lg-4.col-md-6
-            .single-services
-              span.lnr.lnr-smartphone
-              a(href="#")
-                h4 Mobile App Development
-              p
-                | Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
-          .col-lg-4.col-md-6
-            .single-services
-              span.lnr.lnr-rocket
-              a(href="#")
-                h4 Digital Marketing
-              p
-                | You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
-    // End services Area
-   
-    
+    // Start timeline Area
+    section.timeline.pb-120
+      .text-center
+        .menu-content.pb-70
+          .title.text-center
+            h1.mb-10 My Qualifications
+            p Who are in extremely love with eco friendly system.
+      ul
+        li
+          .content
+            h4
+              time Masters in Graphics & Fine Arts
+            p
+              b Session:
+              |  2010-11
+            p
+              b Result:
+              |  3.78 (In the Scale of 4.00)
+        li
+          .content
+            img.img-fluid.mx-auto.d-block.mb-30(src="img/about/c-logo.png" alt="")
+            h4
+              time Creative Content Developer
+            p July 2015 to Present
+        li
+          .content
+            h4
+              time Bachelor in Graphics & UI/UX
+            p
+              b Session:
+              |  2006-09
+            p
+              b Result:
+              |  3.40 (In the Scale of 4.00)
+        li
+          .content
+            img.img-fluid.mx-auto.d-block.mb-30(src="img/about/c-logo.png" alt="")
+            h4
+              time Senior UI/UX Designer
+            p July 2015 to Present
+        li
+          .content
+            h4
+              time Diploma in Fine Arts & Printing
+            p
+              b Session:
+              |  2003-06
+            p
+              b Result:
+              |  4.94 (In the Scale of 5.00)
+    // End timeline Area
     // Start testimonial Area
     section.testimonial-area.section-gap
       .container
@@ -147,21 +180,23 @@ html.no-js(lang="zxx")
                 h4 Carolyn Craig
                 p CEO at Facebook
     // End testimonial Area
-   
+    
     // start footer Area
     footer.footer-area.section-gap
       .container
         .row
           .col-lg-5.col-md-6.col-sm-6
             .single-footer-widget
+              h4 About Charles
+              p
+                | We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
               p.footer-text
-                // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
                 | Copyright ©
                 script.
                   document.write(new Date().getFullYear());
                 |  All rights reserved | 
                 a(href="https://colorlib.com" target="_blank") Charles Uthulor
-              
+               
           .col-lg-2.col-md-6.col-sm-6.social-widget
             .single-footer-widget
               h4 Follow Me
