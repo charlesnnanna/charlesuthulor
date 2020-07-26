@@ -33,7 +33,7 @@ html.no-js(lang="zxx")
       .container.main-menu
         .row.align-items-center.justify-content-between.d-flex
           #logo
-            a(href="index.html")
+            a(href="/")
               img(src="img/logo.png" alt="" title="")
           nav#nav-menu-container
             ul.nav-menu
@@ -56,99 +56,126 @@ html.no-js(lang="zxx")
             h1.text-white
               | Charles' Portfolio
             p.text-white.link-nav
-              a(href="index.html") Home 
+              a(href="/") Home 
               span.lnr.lnr-arrow-right
               a(href="/portfolio") Charles' Portfolio
     // End banner Area
     // Start portfolio-area Area
-    section#portfolio.portfolio-area.section-gap
+    section.home-about-area.section-gap
       .container
-        .row.d-flex.justify-content-center
-          .menu-content.pb-70.col-lg-8
-            .title.text-center
-              h1.mb-10 Our Latest Featured Projects
-              p Who are in extremely love with eco friendly system.
-        .filters
-          ul
-            li.active(data-filter="*") All
-            li(data-filter=".vector") Vector
-            li(data-filter=".raster") Raster
-            li(data-filter=".ui") UI/UX
-            li(data-filter=".printing") Printing
-        .filters-content
-          .row.grid
-            .single-portfolio.col-sm-4.all.vector
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p1.jpg" alt="")
-                a.img-pop-up(href="img/p1.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 2D Vinyl Design
-                .cat vector
-            .single-portfolio.col-sm-4.all.raster
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p2.jpg" alt="")
-                a.img-pop-up(href="img/p2.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 2D Vinyl Design
-                .cat vector
-            .single-portfolio.col-sm-4.all.ui
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p3.jpg" alt="")
-                a.img-pop-up(href="img/p3.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 Creative Poster Design
-                .cat Agency
-            .single-portfolio.col-sm-4.all.printing
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p4.jpg" alt="")
-                a.img-pop-up(href="img/p4.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 Embosed Logo Design
-                .cat Portal
-            .single-portfolio.col-sm-4.all.vector
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p5.jpg" alt="")
-                a.img-pop-up(href="img/p5.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 3D Helmet Design
-                .cat vector
-            .single-portfolio.col-sm-4.all.raster
-              .relative
-                .thumb
-                  .overlay.overlay-bg
-                  img.image.img-fluid(src="img/p6.jpg" alt="")
-                a.img-pop-up(href="img/p6.jpg")
-                  .middle
-                    .text.align-self-center.d-flex
-                      img(src="img/preview.png" alt="")
-              .p-inner
-                h4 2D Vinyl Design
-                .cat raster
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/voice.png" alt="The Voice Newspaper")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase The Voice Newspaper
+            
+            p
+              | A Newspaper website owned by The Voice Newspaper in Abakaliki, Ebonyi, Nigeria
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Currently being Maintained and Updated 
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | WordPress, HTML, PHP, CSS, WP Plugins, WP Themes
+            a.primary-btn.text-uppercase(href="https://voiceofreason.com.ng/") See Website
+
+    section.home-about-area.section-gap
+      .container
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/chatify.png" alt="Chatify")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase Chatify
+            
+            p
+              | A Chat Application.
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Still in progress
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | React, Redux, JSX, CSS, Node, Git
+            a.primary-btn.text-uppercase(href="https://chatychatify.herokuapp.com/") See Website
+            a(style = "margin : 20px;").primary-btn.text-uppercase(href ='https://github.com/charlesnnanna/chatify') Github Repo
+
+    section.home-about-area.section-gap
+      .container
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/injustice.png" alt="Injustice")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase Injustice 2 
+            
+            p
+              | An 
+              a(href = 'https://www.injustice.com/') Injustice website
+              |  clone.
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Still in progress
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | HTML, CSS, Sass, JavaScript, Bootstrap 4, Git
+            a.primary-btn.text-uppercase(href="https://charlesnnanna.github.io/injustice/") See Website
+            a(style = "margin : 20px;").primary-btn.text-uppercase(href ='https://github.com/charlesnnanna/injustice') Github Repo
+
+    section.home-about-area.section-gap
+      .container
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/foodie.png" alt="Foodie")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase Foodie
+            
+            p
+              | A web app where you can search for different food recipes.
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Still in progress
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | React, Node, React Hooks, External APIs
+            a.primary-btn.text-uppercase(href="https://foodie-recipe.herokuapp.com/") See Website
+            a(style = "margin : 20px;").primary-btn.text-uppercase(href ='https://github.com/charlesnnanna/foodie-recipe') Github Repo
+
+    section.home-about-area.section-gap
+      .container
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/trackfit.png" alt="TrackFit")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase TrackFit 
+            
+            p
+              | A web app where people can record and keep track of their exercise activities.
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Still in progress
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | Node, React, Redux, React Hooks
+            a.primary-btn.text-uppercase(href="https://trackfitapp.herokuapp.com/") See Website
+            a(style = "margin : 20px;").primary-btn.text-uppercase(href ='https://github.com/charlesnnanna/TrackFit') Github Repo
+
+    section.home-about-area.section-gap
+      .container
+        .row.align-items-center.justify-content-between
+          .col-lg-6.col-md-6.home-about-left
+            img.img-fluid(src="img/flash.png" alt="FlashMail")
+          .col-lg-5.col-md-6.home-about-right
+            h3.text-uppercase FlashMail
+            
+            p
+              | Flash is a web application that businesses use in creating and sending surveys to their customers via email. It also help businesses keep track of the survey data.
+            p
+              b(style = "text-transform : uppercase;") Status : 
+              | Still in progress
+            p
+              b(style = "text-transform : uppercase;") Technologies used : 
+              | Node, Express, PassportJS, Git, React, Redux
+            a.primary-btn.text-uppercase(href="https://fathomless-spire-17661.herokuapp.com/") See Website
+            a(style = "margin : 20px;").primary-btn.text-uppercase(href ='https://github.com/charlesnnanna/flash') Github Repo
+
     // End portfolio-area Area
     // start footer Area
     footer.footer-area.section-gap
@@ -166,16 +193,18 @@ html.no-js(lang="zxx")
          
           .col-lg-2.col-md-6.col-sm-6.social-widget
             .single-footer-widget
-              h4 Follow Me
-              p Let us be social
+              h4 Contact Me
+              p Would you like to work with me? Contact me through any of the medium below... Hey, I prefer Linkedin
               .footer-social.d-flex.align-items-center
-                a(href="#")
+                a(href ="https://github.com/charlesnnanna")
+                  i.fa.fa-github
+                a(href="https://web.facebook.com/charles.uthulor")
                   i.fa.fa-facebook
-                a(href="#")
+                a(href="https://twitter.com/CUthulor")
                   i.fa.fa-twitter
-                a(href="#")
+                a(href="https://www.linkedin.com/in/charles-uthulor")
                   i.fa.fa-linkedin
-                a(href="#")
+                a(href="https://www.instagram.com/charlesuthulor")
                   i.fa.fa-instagram
     // End footer Area
     script(src="js/vendor/jquery-2.2.4.min.js")
